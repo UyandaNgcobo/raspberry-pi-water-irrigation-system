@@ -13,7 +13,7 @@ A complete IoT irrigation system combining C++ hardware control, Node.js API, an
 │ • Soil Moisture │    │ • Data Storage  │    │ • Manual Control│
 │ • Water Pump    │    │ • CORS & Auth   │    │ • System Logs   │
 │ • Servo Motor   │    │                 │    │                 │
-│ • LCD Display   │    │                 │    │                 │
+│ • OLED Display  │    │                 │    │                 │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
@@ -44,7 +44,7 @@ Navigate to `http://localhost:3000` in your browser
 ## 📁 Project Structure
 
 ```
-water-irrigation-system/
+raspberry-pi-water-irrigation-system/
 ├── raspberry-pi/           # C++ Hardware Control
 │   ├── main.cpp           # Main program
 │   ├── Makefile           # Build configuration  
@@ -72,13 +72,13 @@ Since this is a demo without real hardware, the system simulates:
 
 ## 🌐 API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/current` | Get current sensor readings |
-| GET | `/api/history` | Get historical data |
-| POST | `/api/water` | Manually trigger watering |
-| GET | `/api/status` | System status |
-| GET | `/api/health` | Health check |
+| Method | Endpoint       | Description                 |
+|--------|----------------|-----------------------------|
+| GET    | `/api/current` | Get current sensor readings |
+| GET    | `/api/history` | Get historical data         |
+| POST   | `/api/water`   | Manually trigger watering   |
+| GET    | `/api/status`  | System status               |
+| GET    | `/api/health`  | Health check                |
 
 ## 🎯 Features
 
