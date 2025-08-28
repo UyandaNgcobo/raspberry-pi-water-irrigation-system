@@ -44,7 +44,7 @@ Navigate to `http://localhost:3000` in your browser
 ## 📁 Project Structure
 
 ```
-water-irrigation-system/
+raspberry-pi-water-irrigation-system/
 ├── raspberry-pi/           # C++ Hardware Control
 │   ├── main.cpp           # Main program
 │   ├── Makefile           # Build configuration  
