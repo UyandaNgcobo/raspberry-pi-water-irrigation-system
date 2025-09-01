@@ -42,10 +42,6 @@ raspberry-pi-water-irrigation-system/
 │   ├── main.cpp           # Main program
 │   ├── Makefile           # Build configuration  
 │   └── build/             # Compiled executables
-├── frontend/              # Web Dashboard
-│   ├── index.html         # Main dashboard
-│   ├── style.css          # Styling
-│   └── script.js          # Frontend logic
 └── README.md              # This file
 ```
 
