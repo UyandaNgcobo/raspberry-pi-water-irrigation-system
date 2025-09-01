@@ -1,20 +1,20 @@
 # 🌱 Smart Water Irrigation System
 
-A complete IoT irrigation system combining C++ hardware control, Node.js API, and web dashboard.
+A complete IoT irrigation system combining C++ hardware control.
 
 ## 🏗️ Architecture
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Raspberry Pi  │    │    Node.js      │    │   Web Dashboard │
-│                 │    │                 │    │                 │
-│ • Temperature   │    │ • API Server    │    │ • Live Sensors  │
-│ • Humidity      │◄──►│ • C++ Bridge    │◄──►│ • Charts        │
-│ • Soil Moisture │    │ • Data Storage  │    │ • Manual Control│
-│ • Water Pump    │    │ • CORS & Auth   │    │ • System Logs   │
-│ • Servo Motor   │    │                 │    │                 │
-│ • OLED Display  │    │                 │    │                 │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+┌─────────────────┐    ┌─────────────────┐
+│   Raspberry Pi  │    │     Terminal    │
+│                 │    │                 │
+│ • Temperature   │    │ • Live Sensors  │
+│ • Humidity      │◄──►│ • System Logs   │
+│ • Soil Moisture │    │ • Manual Control│
+│ • Water Pump    │    │                 │
+│ • Servo Motor   │    │                 │
+│ • OLED Display  │    │                 │
+└─────────────────┘    └─────────────────┘
 ```
 
 ## 🚀 Quick Start
@@ -30,9 +30,6 @@ cd water-irrigation-system
 cd raspberry-pi
 make
 ```
-
-### 4. Open Dashboard
-Navigate to `http://localhost:3000` in your browser
 
 ## 📁 Project Structure
 
@@ -80,11 +77,6 @@ make test         # Build and test
 make clean        # Clean build files
 make debug        # Debug build
 
-# Node.js development
-cd node-server
-npm run dev       # Start with auto-reload
-```
-
 ### Adding New Sensors
 1. Add sensor reading function in `main.cpp`
 2. Update JSON output structure
@@ -95,8 +87,6 @@ npm run dev       # Start with auto-reload
 
 Perfect for demonstrating:
 - **C++ Programming**: Hardware simulation, algorithms
-- **Web APIs**: RESTful design, JSON data
-- **Frontend Development**: Interactive dashboards
 - **System Integration**: Multiple technologies working together
 - **IoT Concepts**: Sensor data, automation, remote control
 
@@ -111,19 +101,9 @@ g++ --version
 make clean && make
 ```
 
-
-## 📝 Future Enhancements
-
-- 📱 Mobile app integration
-- 🌐 Remote monitoring via cloud
-- 📊 Data persistence (database)
-- 🔔 Notification system
-- 🌡️ Weather API integration
-- 📈 Machine learning predictions
-
 ## 👨‍💻 Contributors
 
-- Your Name - Initial work
+- Uyanda Ngcobo, Liseluse Magebhe, Andile Mbokazi
 
 ## 📄 License
 
